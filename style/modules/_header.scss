@@ -4,6 +4,9 @@
     url("./../images/brown-canoe-in-the-body-of-water-near-mountain-675764.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  @include iphone {
+    background-position: left;
+  }
 
   &__box {
     position: absolute;
@@ -11,7 +14,7 @@
     right: 0;
     top: 35%;
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     text-align: center;
     color: white;
     font-family: "Poppins", sans-serif;

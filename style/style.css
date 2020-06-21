@@ -51,13 +51,16 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url("./../images/brown-canoe-in-the-body-of-water-near-mountain-675764.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+  @media only screen and (max-width: 640px) {
+    .header {
+      background-position: left; } }
   .header__box {
     position: absolute;
     left: 0;
     right: 0;
     top: 35%;
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     text-align: center;
     color: white;
     font-family: "Poppins", sans-serif; }
