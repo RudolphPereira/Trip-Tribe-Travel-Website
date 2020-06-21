@@ -1,0 +1,93 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.5rem;
+  background-color: #131c27;
+  color: white;
+  font-family: "Pattaya", sans-serif; }
+  @media only screen and (max-width: 640px) {
+    .nav {
+      flex-direction: column;
+      align-items: center; } }
+  .nav__logo {
+    font-family: "Pattaya", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 0 2rem;
+    margin: 0;
+    font-size: 1.5rem; }
+    @media only screen and (max-width: 640px) {
+      .nav__logo {
+        margin: 1rem 0 0 0.5rem; } }
+  .nav__list {
+    display: flex;
+    list-style: none;
+    font-family: "Poppins", sans-serif; }
+    @media only screen and (max-width: 640px) {
+      .nav__list {
+        padding: 0.3rem 0; } }
+  .nav__items {
+    margin-right: 2rem;
+    font-size: 0.9rem; }
+    @media only screen and (max-width: 640px) {
+      .nav__items {
+        margin-left: 2rem; } }
+  .nav__links {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s; }
+  .nav__links:hover {
+    background-color: white;
+    color: #222;
+    padding: 0.2rem 0.4rem; }
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url("./../../images/brown-canoe-in-the-body-of-water-near-mountain-675764.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .header__box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif; }
+  .header__title {
+    font-size: 2rem; }
+    @media only screen and (max-width: 640px) {
+      .header__title {
+        font-size: 1.5rem; } }
+  .header__desc {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: 0; }
+    @media only screen and (max-width: 640px) {
+      .header__desc {
+        font-size: 1rem; } }
+  .header__link {
+    text-decoration: none;
+    background-color: #4c6e97;
+    border: none;
+    padding: 0.8rem 3rem;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s; }
+    @media only screen and (max-width: 640px) {
+      .header__link {
+        padding: 0.7rem 2rem;
+        font-size: 0.7rem; } }
+  .header__link:hover {
+    background-color: white;
+    color: #222;
+    box-shadow: 2px 2px 4px black; }

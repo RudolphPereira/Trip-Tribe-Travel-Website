@@ -1,0 +1,57 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    url("./../../images/brown-canoe-in-the-body-of-water-near-mountain-675764.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+
+  &__title {
+    font-size: 2rem;
+    @include iphone {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__desc {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: 0;
+    @include iphone {
+      font-size: 1rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    background-color: #4c6e97;
+    border: none;
+    padding: 0.8rem 3rem;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    @include iphone {
+      padding: 0.7rem 2rem;
+      font-size: 0.7rem;
+    }
+  }
+
+  &__link:hover {
+    background-color: white;
+    color: #222;
+    box-shadow: 2px 2px 4px black;
+  }
+}

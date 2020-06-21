@@ -1,0 +1,54 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.5rem;
+  background-color: #131c27;
+  color: white;
+  font-family: "Pattaya", sans-serif;
+  @include iphone {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    font-family: "Pattaya", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 0 2rem;
+    margin: 0;
+    font-size: 1.5rem;
+    @include iphone {
+      margin: 1rem 0 0 0.5rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    @include iphone {
+      padding: 0.3rem 0;
+    }
+  }
+
+  &__items {
+    margin-right: 2rem;
+    font-size: 0.9rem;
+    @include iphone {
+      margin-left: 2rem;
+    }
+  }
+
+  &__links {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+  }
+
+  &__links:hover {
+    background-color: white;
+    color: #222;
+    padding: 0.2rem 0.4rem;
+  }
+}
