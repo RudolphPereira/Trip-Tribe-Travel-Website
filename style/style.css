@@ -64,6 +64,9 @@ body {
     text-align: center;
     color: white;
     font-family: "Poppins", sans-serif; }
+    @media only screen and (max-width: 640px) {
+      .header__box {
+        top: 30%; } }
   .header__title {
     font-size: 2rem; }
     @media only screen and (max-width: 640px) {

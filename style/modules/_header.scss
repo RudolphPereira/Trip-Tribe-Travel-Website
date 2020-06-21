@@ -18,6 +18,9 @@
     text-align: center;
     color: white;
     font-family: "Poppins", sans-serif;
+    @include iphone {
+      top: 30%;
+    }
   }
 
   &__title {
