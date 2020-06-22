@@ -7,6 +7,9 @@
   background-position: center;
   position: relative;
   overflow: hidden;
+  @include iphone {
+    background-position: bottom;
+  }
 
   &__text--container {
     position: absolute;

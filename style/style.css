@@ -112,6 +112,9 @@ body {
   background-position: center;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 640px) {
+    .locations {
+      background-position: bottom; } }
   .locations__text--container {
     position: absolute;
     left: 0;
