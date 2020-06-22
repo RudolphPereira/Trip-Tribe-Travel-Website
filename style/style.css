@@ -6,24 +6,30 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3.5rem;
+  width: 100%;
+  position: absolute;
+  position: fixed;
+  z-index: 999;
   background-color: #131c27;
   color: white;
   font-family: "Pattaya", sans-serif; }
   @media only screen and (max-width: 640px) {
     .nav {
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      padding: 1.2rem 0 0 0; } }
   .nav__logo {
+    text-decoration: none;
+    color: white;
     font-family: "Pattaya", sans-serif;
     font-size: 1.5rem;
     font-weight: 200;
     padding: 0 2rem;
     margin: 0;
-    font-size: 1.5rem; }
+    cursor: pointer; }
     @media only screen and (max-width: 640px) {
       .nav__logo {
-        margin: 1rem 0 0 0.5rem; } }
+        margin-left: 0.5rem; } }
   .nav__list {
     display: flex;
     list-style: none;
@@ -97,3 +103,65 @@ body {
     background-color: white;
     color: #222;
     box-shadow: 2px 2px 4px black; }
+
+.locations {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url("./../../images/new-york-page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden; }
+  .locations__text--container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    width: 50%;
+    padding: 2rem 3rem;
+    font-family: "Poppins", sans-serif; }
+    @media only screen and (max-width: 1024px) {
+      .locations__text--container {
+        top: 30%;
+        width: 55%; } }
+    @media only screen and (max-width: 640px) {
+      .locations__text--container {
+        top: 15%; } }
+  .locations__title {
+    text-decoration: underline;
+    font-size: 1.8rem; }
+    @media only screen and (max-width: 640px) {
+      .locations__title {
+        font-size: 1.5rem; } }
+  .locations__desc {
+    font-size: 1.1rem; }
+  .locations__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    animation: cloudAnimation 3s infinite alternate ease-in-out; }
+    @media only screen and (max-width: 1024px) {
+      .locations__image {
+        width: 70%; } }
+    @media only screen and (max-width: 640px) {
+      .locations__image {
+        width: 100%; } }
+
+#cloud-2 {
+  top: 20%;
+  opacity: 0.5rem;
+  z-index: -1;
+  animation: cloudAnimation 3.2s infinite alternate ease-in-out; }
+  @media only screen and (max-width: 1024px) {
+    #cloud-2 {
+      top: 10%; } }
+  @media only screen and (max-width: 640px) {
+    #cloud-2 {
+      top: 10%; } }
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%); }
+  to {
+    transform: translate(0, 0); } }

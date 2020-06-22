@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="Home">
       <div class="nav">
         <div class="nav__logo--container">
-          <h1 class="nav__logo">Trip Tribe</h1>
+          <a href="#Home" class="nav__logo">Trip Tribe</a>
         </div>
         <ul class="nav__list">
           <li class="nav__items">
@@ -42,5 +42,30 @@
         <a href="#contact" class="header__link">Book Now</a>
       </div>
     </header>
+
+    <section class="locations" id="locations">
+      <div class="locations__text--container">
+        <h1 class="locations__title">The Perfect Travelling Experience.</h1>
+        <p class="locations__desc">
+          We cover everything from picking the perfect hotel, flight and
+          travelling destination.
+        </p>
+      </div>
+
+      <div class="loactions__image--container">
+        <img
+          src="./images/cloud.png"
+          alt="cloud-image"
+          class="locations__image"
+          id="cloud-1"
+        />
+        <img
+          src="./images/cloud.png"
+          alt="cloud-image"
+          class="locations__image"
+          id="cloud-2"
+        />
+      </div>
+    </section>
   </body>
 </html>

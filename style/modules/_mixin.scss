@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin ipad {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
