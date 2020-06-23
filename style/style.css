@@ -172,3 +172,64 @@ body {
     transform: translate(10%, -10%); }
   to {
     transform: translate(0, 0); } }
+
+.benefits {
+  height: 100vh;
+  font-family: "Poppins", sans-serif; }
+  .benefits__text--content {
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #343c44;
+    color: white; }
+    @media only screen and (max-width: 640px) {
+      .benefits__text--content {
+        padding: 6.5rem 0rem 1rem 0rem; } }
+  .benefits__title {
+    font-size: 1.8rem; }
+    @media only screen and (max-width: 640px) {
+      .benefits__title {
+        font-size: 1.6rem; } }
+  .benefits__desc {
+    font-size: 1.1rem; }
+    @media only screen and (max-width: 640px) {
+      .benefits__desc {
+        font-size: 0.9rem;
+        margin: auto 1rem; } }
+  .benefits__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 640px) {
+      .benefits__cards {
+        flex-direction: column;
+        align-items: center; } }
+  .benefits__card {
+    width: 25%;
+    box-shadow: 2px 2px 4px grey;
+    margin: 3rem 1rem;
+    text-align: center; }
+    @media only screen and (max-width: 1024px) {
+      .benefits__card {
+        width: 30%; } }
+    @media only screen and (max-width: 640px) {
+      .benefits__card {
+        width: 60%;
+        margin: 1rem 0; } }
+  .benefits__card--textcontainer {
+    padding: 0rem 1rem;
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 1024px) {
+      .benefits__card--textcontainer {
+        margin-bottom: 0; } }
+  .benefits__card--title {
+    font-size: 1.2rem; }
+  .benefits__card--desc {
+    font-size: 0.8rem;
+    margin-top: 0; }
+  .benefits__card--imagecontainer {
+    background-color: #4c6e97;
+    padding: 0.5rem 0; }
+  .benefits__image {
+    height: 3rem;
+    width: 3rem; }

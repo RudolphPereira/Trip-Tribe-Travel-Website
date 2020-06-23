@@ -1,0 +1,81 @@
+.benefits {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+
+  &__text--content {
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #343c44;
+    color: white;
+    @include iphone {
+      padding: 6.5rem 0rem 1rem 0rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    @include iphone {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__desc {
+    font-size: 1.1rem;
+    @include iphone {
+      font-size: 0.9rem;
+      margin: auto 1rem;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include iphone {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__card {
+    width: 25%;
+    box-shadow: 2px 2px 4px grey;
+    margin: 3rem 1rem;
+    text-align: center;
+    @include ipad {
+      width: 30%;
+    }
+    @include iphone {
+      width: 60%;
+      margin: 1rem 0;
+    }
+  }
+
+  &__card--textcontainer {
+    padding: 0rem 1rem;
+    margin-bottom: 2rem;
+    @include ipad {
+      margin-bottom: 0;
+    }
+  }
+
+  &__card--title {
+    font-size: 1.2rem;
+  }
+
+  &__card--desc {
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+
+  &__card--imagecontainer {
+    background-color: #4c6e97;
+    padding: 0.5rem 0;
+  }
+
+  &__image {
+    height: 3rem;
+    width: 3rem;
+  }
+}
