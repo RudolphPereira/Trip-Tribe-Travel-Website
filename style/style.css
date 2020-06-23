@@ -9,6 +9,7 @@ body {
   width: 100%;
   position: absolute;
   position: fixed;
+  top: 0;
   z-index: 999;
   background-color: #131c27;
   color: white;
@@ -179,12 +180,12 @@ body {
   .benefits__text--content {
     width: 100%;
     text-align: center;
-    padding: 3rem 0;
     background-color: #343c44;
-    color: white; }
+    color: white;
+    padding: 3rem 0; }
     @media only screen and (max-width: 640px) {
       .benefits__text--content {
-        padding: 6.5rem 0rem 1rem 0rem; } }
+        padding: 6.5rem 0 1.5rem 0; } }
   .benefits__title {
     font-size: 1.8rem; }
     @media only screen and (max-width: 640px) {
