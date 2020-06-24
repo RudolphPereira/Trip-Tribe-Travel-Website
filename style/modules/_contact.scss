@@ -1,59 +1,62 @@
 .contact {
   height: 90vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
-    url("./../../images/scenic-photo-of-mountain-during-dawn-2835562.jpg");
+    url("./../images/scenic-photo-of-mountain-during-dawn-2835562.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   font-family: "Poppins", sans-serif;
   color: white;
-}
 
-.contact__content {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 25%;
-  margin: 0 auto;
-  width: 45%;
-  background-color: #343c44c9;
-  border-radius: 20px;
-  text-align: center;
-}
+  &__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    margin: 0 auto;
+    width: 45%;
+    background-color: #343c44c9;
+    border-radius: 20px;
+    text-align: center;
+    @include iphone {
+      width: 75%;
+    }
+  }
 
-.contact__title {
-  font-size: 1.8rem;
-  padding: 2rem 0 0 0;
-}
+  &__title {
+    font-size: 1.8rem;
+    padding: 2rem 0 0 0;
+  }
 
-input {
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  margin-left: 0.2rem;
-}
+  input {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-left: 0.2rem;
+  }
 
-.contact__name--container {
-  padding: 1rem 0 2rem 0;
-}
+  &__name--container {
+    padding: 1rem 0 2rem 0;
+  }
 
-.contact__button {
-  width: 100%;
-  margin-top: 3rem;
-  padding: 1rem 0;
-  background-color: #4c6e97;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  font-size: 0.8rem;
-  transition: all 0.5s;
-}
+  &__button {
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    background-color: #4c6e97;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 0.8rem;
+    transition: all 0.5s;
+  }
 
-.contact__button:hover {
-  background-color: white;
-  color: #222;
-  font-weight: bold;
+  &__button:hover {
+    background-color: white;
+    color: #222;
+    font-weight: bold;
+  }
 }

@@ -143,11 +143,16 @@
     <section class="contact" id="contact">
       <div class="contact__content">
         <h1 class="contact__title">Contact Us</h1>
-        <form action="" class="contact__form">
+        <form
+          action="https://formspree.io/xeqrzyzj"
+          method="POST"
+          class="contact__form"
+        >
           <div class="contact__name--container">
             <label for="Name">Name</label>
             <input
               type="text"
+              name="name"
               class="contact__name"
               placeholder="Enter Name"
               required
@@ -157,20 +162,37 @@
             <label for="Email">Email</label>
             <input
               type="email"
-              name="Email"
+              name="_replyto"
               class="contact__email"
               placeholder="Enter Email"
               required
             />
           </div>
-          <button class="contact__button">Submit</button>
+          <button class="contact__button" value="Send">Submit</button>
         </form>
       </div>
     </section>
 
     <footer class="footer">
       <div class="footer__content">
-        <h5 class="footer__title">Trip Tribe &copy;</h5>
+        <h3 class="footer__title">Trip Tribe &copy;</h3>
+        <ul class="footer__list">
+          <li class="footer__items">
+            <a href="#" class="footer__links"
+              ><img src="./images/icons/youtube.svg" alt=""
+            /></a>
+          </li>
+          <li class="footer__items">
+            <a href="#" class="footer__links"
+              ><img src="./images/icons/twitter.svg" alt=""
+            /></a>
+          </li>
+          <li class="footer__items">
+            <a href="#" class="footer__links"
+              ><img src="./images/icons/instagram.svg" alt=""
+            /></a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
