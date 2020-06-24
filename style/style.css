@@ -251,7 +251,7 @@ body {
     margin: 0 auto;
     width: 45%;
     background-color: #343c44c9;
-    border-radius: 20px;
+    border-radius: 30px;
     text-align: center; }
     @media only screen and (max-width: 640px) {
       .contact__content {
